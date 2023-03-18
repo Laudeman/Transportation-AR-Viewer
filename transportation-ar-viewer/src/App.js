@@ -11,14 +11,12 @@ function App() {
 				src="truck.glb"
 				alt="A 3D model of an astronaut"
 				style={{
-					width: "1000px",
-					height: "1000px",
+					width: "100%",
+					height: "100vh",
 				}}
-				width="800px"
-				height="100%"
 				auto-rotate
-				camera-controls
 				ar
+				camera-controls
 				poster="./truck.jpg"
 			></model-viewer>
 		</div>
