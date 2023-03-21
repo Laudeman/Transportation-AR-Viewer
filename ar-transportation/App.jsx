@@ -1,27 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import "@google/model-viewer";
 
-declare global {
-	namespace JSX {
-		interface IntrinsicElements {
-			"model-viewer": MyElementAttributes;
-		}
-		interface MyElementAttributes {
-			src: string;
-			id: any;
-			style: any;
-			alt: string;
-			ar: boolean;
-			poster: string;
-		}
-	}
-}
-
 export default function App() {
+	//const [assets, error] = useAssets([require('assets/')])
 	return (
 		<View style={styles.container}>
-			<StatusBar style="auto" />
 			<model-viewer
 				id="mv-demo"
 				shadow-intensity="1"
@@ -34,7 +17,6 @@ export default function App() {
 				auto-rotate
 				ar
 				camera-controls
-				poster="./truck.jpg"
 			></model-viewer>
 		</View>
 	);
