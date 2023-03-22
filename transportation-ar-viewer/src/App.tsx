@@ -1,6 +1,6 @@
 import "./App.css";
 import "@google/model-viewer";
-import { Box, Paper } from "@mui/material";
+import { Box, Button, Paper, Stack } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
@@ -50,6 +50,19 @@ function App() {
 								poster="./truck.jpg"
 							></model-viewer>
 						</Box>
+					</Paper>
+					<Paper>
+						<Stack direction="row">
+							<Button>
+								<img src="logo192.png" />
+							</Button>
+							<Button>
+								<img src="logo192.png" />
+							</Button>
+							<Button>
+								<img src="logo192.png" />
+							</Button>
+						</Stack>
 					</Paper>
 				</Box>
 			</CssBaseline>
