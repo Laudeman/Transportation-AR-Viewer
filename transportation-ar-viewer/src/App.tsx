@@ -1,6 +1,6 @@
 import "./App.css";
 import "@google/model-viewer";
-import { Box, Button, Paper, Stack } from "@mui/material";
+import { Box, Button, Divider, Paper, Stack } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
@@ -27,8 +27,15 @@ function App() {
 			<CssBaseline>
 				<Box>
 					<h1>Transportation</h1>
-					<Paper variant="outlined">
-						<Box position="relative" width="75vw" height="50vh">
+					<Paper
+						variant="outlined"
+						sx={{
+							position: "relative",
+							width: "75vw",
+							height: "50vh",
+						}}
+					>
+						<Box>
 							<h2
 								style={{
 									position: "absolute",
@@ -37,7 +44,7 @@ function App() {
 									left: 0,
 								}}
 							>
-								Old Truck
+								Old Truck - 1970
 							</h2>
 							<model-viewer
 								id="mv-demo"
@@ -51,8 +58,20 @@ function App() {
 							></model-viewer>
 						</Box>
 					</Paper>
-					<Paper>
-						<Stack direction="row">
+					<Paper
+						variant="outlined"
+						sx={{
+							position: "relative",
+							width: "75vw",
+						}}
+					>
+						<Stack
+							justifyContent="space-evenly"
+							direction="row"
+							divider={
+								<Divider orientation="vertical" flexItem />
+							}
+						>
 							<Button>
 								<img src="logo192.png" />
 							</Button>
