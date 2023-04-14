@@ -1,0 +1,29 @@
+{
+  "models": [
+    {
+      "name": "Wheel Cart",
+      "path": "wheel_cart.glb",
+      "year": "3500 B.C.E"
+    },
+    {
+      "name": "Steam Locomotive",
+      "path": "steam_locomotive.glb",
+      "year": "1804"
+    },
+    {
+      "name": "Steamboat",
+      "path": "steamboat.glb",
+      "year": "1807"
+    },
+    {
+      "name": "Motor Carriage",
+      "path": "motor_carriage.glb",
+      "year": "1886"
+    },
+    {
+      "name": "Wright Flyer / Biplane",
+      "path": "wright_flyer.glb",
+      "year": "1903"
+    }
+  ]
+}
