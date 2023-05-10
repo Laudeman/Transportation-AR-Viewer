@@ -81,9 +81,10 @@ function App() {
 								background: "#1a202c",
 								position: "relative",
 								width: "75vw",
-								height: "50vh",
+								height: "75vh",
 								"@media (max-width: 600px)": {
 									width: "90vw",
+									height: "50vh",
 								},
 							}}
 						>
