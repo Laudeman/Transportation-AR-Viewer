@@ -60,7 +60,7 @@ function getModelPath(value: number) {
 }
 
 function App() {
-	const [value, setValue] = useState<number>(0);
+	const [value, setValue] = useState<number>(5);
 
 	const handleSliderChange = (event: Event, newValue: number | number[]) => {
 		setValue(newValue as number);
@@ -74,7 +74,7 @@ function App() {
 						direction="column"
 						sx={{ justifyContent: "center", alignItems: "center" }}
 					>
-						<h1>Transportation</h1>
+						<h1>Transportation Over Time</h1>
 						<Paper
 							variant="outlined"
 							sx={{
